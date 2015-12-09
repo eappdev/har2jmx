@@ -23,6 +23,38 @@ SOFTWARE.
  */
 package com.github.e2point718.har2jmx;
 
-class JMX {
+import java.io.IOException;
 
+import org.json.JSONException;
+
+import junit.framework.TestCase;
+
+public class HARBuildTest extends TestCase {
+
+	public void testInvalidJSON(){
+		try {
+			HAR.build("test");
+			fail("Invalid HAR JSON object should throw JSONException");
+		} catch (JSONException e) {			
+		}
+	}
+
+	public void testInvalidJSONWithoutLog(){
+		try {
+			HAR.build("{}");
+			fail("Invalid HAR JSON object should throw JSONException");
+		} catch (JSONException e) {			
+		}
+	}
+	
+	public void testJSONWithoutPagesOrEntries(){
+		assertNotNull(HAR.build("{\"log\": {}}"));
+	}
+	
+	public void testGetRequestJSON() throws IOException{
+		HAR har = HAR.build(HARBuildTest.class.getResource("/har_simple_get.json"));
+		assertNotNull(har);
+		assertEquals(1, har.pages.length);
+		assertEquals(18, har.entries.length);
+	}
 }

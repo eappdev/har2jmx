@@ -23,59 +23,87 @@ SOFTWARE.
  */
 package com.github.e2point718.har2jmx;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.io.Serializable;
 import java.net.URL;
 import java.util.Map;
 
+import org.json.JSONArray;
+import org.json.JSONException;
 import org.json.JSONObject;
 
 /**
  * This class includes the attributes from the HAR spec that are relevant for JMX files
  * https://dvcs.w3.org/hg/webperf/raw-file/tip/specs/HAR/Overview.html
  */
-public final class HAR implements Serializable {
+final class HAR implements Serializable {
 
 	private static final long serialVersionUID = 8244089962694925306L;
 	
-	private String version;
-	private Page[] pages;
-	private Entry[] entries;
+	Page[] pages;
+	Entry[] entries;
 	
-	static final class Log {
-		
+	public static long getSerialversionuid() {
+		return serialVersionUID;
 	}
-	
+
 	static final class Page {
-		
+		String id;
+		String title;
 	}
 
 	static final class Entry {
 		
-		private Page page;
-		private Request request;
-		private Response response;
+		Page page;
+		Request request;
+		Response response;
 	}
 	
 	static final class Request {
 		
-		private Page page;
-		private Method method;
-		private URL url;
-		private String httpVersion;
+		Page pageref;
+		Method method;
+		URL url;
 		
-		private long headersSize;
-		private long bodySize;
+		String httpVersion;
+		long headersSize;
+		long bodySize;
 		
+		Cookie[] cookies;
 		
-		private Map<String,String> headers;
-		private Map<String,String> queryString;
+		Map<String,String> headers;
+		Map<String,String> queryString;
+		
+		PostData postData;
 	}
 	
 	
 
 	static final class Response {
 		
+		String httpVersion;
+		long headersSize;
+		long bodySize;
 		
+		Cookie[] cookies;
+		
+		Map<String,String> headers;
+		
+	}
+	
+	static final class PostData {
+		String mimeType;
+		PostDataParam[] params;
+		String text;
+	}
+	
+	static final class PostDataParam {
+		String name;
+		String value;
+		String fileName;
+		String contentType;
 	}
 
 	static enum Method {
@@ -83,11 +111,57 @@ public final class HAR implements Serializable {
 	}
 	
 	static final class Cookie {
-		
+		String name;
+		String value;
+		String path;
+		String domain;
+		boolean httpOnly;
+		boolean secure;
 	}
 	
-	public static HAR build(JSONObject har){
+	private static JSONArray getOptionalArray(JSONObject obj,String key){
+		try {
+			return obj.getJSONArray(key);
+		} catch (JSONException e) {
+			return null;
+		}
+	}
+	
+	private static JSONObject getOptionalObject(JSONObject obj,String key){
+		try {
+			return obj.getJSONObject(key);
+		} catch (JSONException e) {
+			return null;
+		}
+	}
+
+	public static HAR build(URL source) throws IOException{
+		String line = null;
+		StringBuilder bu = new StringBuilder();
+		BufferedReader reader = new BufferedReader(new InputStreamReader(source.openStream()));
+		try{
+			while((line=reader.readLine())!=null){
+				bu.append(line);
+			}
+		}finally{
+			reader.close();
+		}
+		return build(bu.toString());
+	}
+		
+	public static HAR build(String source){
 		HAR h = new HAR();
+		JSONObject har = new JSONObject(source);
+		JSONObject log = har.getJSONObject("log");
+		JSONArray jPages = getOptionalArray(log,"pages");
+		if(jPages!=null){
+			h.pages = new Page[jPages.length()];
+			
+		}
+		JSONArray jEntries = getOptionalArray(log,"entries");
+		if(jEntries!=null){
+			h.entries = new Entry[jEntries.length()];
+		}
 		return h;
 	}
 }
