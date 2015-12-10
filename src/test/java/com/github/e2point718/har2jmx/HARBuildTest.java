@@ -56,5 +56,7 @@ public class HARBuildTest extends TestCase {
 		assertNotNull(har);
 		assertEquals(1, har.pages.length);
 		assertEquals(18, har.entries.length);
+		assertNotNull(har.entries[0].pageref);
+		System.out.println(har);
 	}
 }

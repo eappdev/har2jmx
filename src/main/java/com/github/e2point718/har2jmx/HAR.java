@@ -27,7 +27,10 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.Serializable;
+import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.Arrays;
+import java.util.HashMap;
 import java.util.Map;
 
 import org.json.JSONArray;
@@ -39,6 +42,7 @@ import org.json.JSONObject;
  * https://dvcs.w3.org/hg/webperf/raw-file/tip/specs/HAR/Overview.html
  */
 final class HAR implements Serializable {
+
 
 	private static final long serialVersionUID = 8244089962694925306L;
 	
@@ -52,18 +56,28 @@ final class HAR implements Serializable {
 	static final class Page {
 		String id;
 		String title;
+		
+		@Override
+		public String toString() {
+			return "Page [id=" + id + ", title=" + title + "]";
+		}		
 	}
 
 	static final class Entry {
 		
-		Page page;
+		Page pageref;
 		Request request;
 		Response response;
+		
+		@Override
+		public String toString() {
+			return "Entry [pageref=" + pageref + ",\n request=" + request + ",\n response=" + response + "]";
+		}
+				
 	}
 	
 	static final class Request {
 		
-		Page pageref;
 		Method method;
 		URL url;
 		
@@ -77,12 +91,22 @@ final class HAR implements Serializable {
 		Map<String,String> queryString;
 		
 		PostData postData;
+
+		@Override
+		public String toString() {
+			return "Request [method=" + method + ", url=" + url + ", httpVersion=" + httpVersion + ", headersSize="
+					+ headersSize + ", bodySize=" + bodySize + ", cookies=" + Arrays.toString(cookies) + ", headers="
+					+ headers + ", queryString=" + queryString + ", postData=" + postData + "]";
+		}
+		
+		
 	}
 	
 	
 
 	static final class Response {
-		
+		String status;
+		String statusText;
 		String httpVersion;
 		long headersSize;
 		long bodySize;
@@ -90,13 +114,25 @@ final class HAR implements Serializable {
 		Cookie[] cookies;
 		
 		Map<String,String> headers;
-		
+
+		@Override
+		public String toString() {
+			return "Response [status=" + status + ", statusText=" + statusText + ", httpVersion=" + httpVersion
+					+ ", headersSize=" + headersSize + ", bodySize=" + bodySize + ", cookies="
+					+ Arrays.toString(cookies) + ", headers=" + headers + "]";
+		}
 	}
 	
 	static final class PostData {
 		String mimeType;
 		PostDataParam[] params;
 		String text;
+		@Override
+		public String toString() {
+			return "PostData [mimeType=" + mimeType + ", params=" + Arrays.toString(params) + ", text=" + text + "]";
+		}
+		
+		
 	}
 	
 	static final class PostDataParam {
@@ -104,6 +140,13 @@ final class HAR implements Serializable {
 		String value;
 		String fileName;
 		String contentType;
+		
+		@Override
+		public String toString() {
+			return "PostDataParam [name=" + name + ", value=" + value + ", fileName=" + fileName + ", contentType="
+					+ contentType + "]";
+		}
+		
 	}
 
 	static enum Method {
@@ -117,6 +160,13 @@ final class HAR implements Serializable {
 		String domain;
 		boolean httpOnly;
 		boolean secure;
+		
+		@Override
+		public String toString() {
+			return "Cookie [name=" + name + ", value=" + value + ", path=" + path + ", domain=" + domain + ", httpOnly="
+					+ httpOnly + ", secure=" + secure + "]";
+		}
+		
 	}
 	
 	private static JSONArray getOptionalArray(JSONObject obj,String key){
@@ -130,6 +180,14 @@ final class HAR implements Serializable {
 	private static JSONObject getOptionalObject(JSONObject obj,String key){
 		try {
 			return obj.getJSONObject(key);
+		} catch (JSONException e) {
+			return null;
+		}
+	}
+	
+	private static String getOptionalProperty(JSONObject obj,String key){
+		try {
+			return obj.getString(key);
 		} catch (JSONException e) {
 			return null;
 		}
@@ -154,14 +212,80 @@ final class HAR implements Serializable {
 		JSONObject har = new JSONObject(source);
 		JSONObject log = har.getJSONObject("log");
 		JSONArray jPages = getOptionalArray(log,"pages");
+		Map<String,Page> pages = new HashMap<>();
 		if(jPages!=null){
 			h.pages = new Page[jPages.length()];
+			for(int i=0;i<jPages.length();i++){
+				JSONObject jPage = jPages.getJSONObject(i);
+				Page page = new Page();
+				h.pages[i] = page;
+				page.id = jPage.getString("id");
+				page.title = jPage.getString("title");
+				pages.put(page.id, page);
+			}
 			
 		}
 		JSONArray jEntries = getOptionalArray(log,"entries");
 		if(jEntries!=null){
 			h.entries = new Entry[jEntries.length()];
+			for(int i=0;i<jEntries.length();i++){
+				JSONObject jEntry = jEntries.getJSONObject(i);
+				Entry entry = new Entry();
+				h.entries[i] = entry;
+				entry.pageref = pages.get(getOptionalProperty(jEntry,"pageref"));
+				JSONObject jRequest = jEntry.getJSONObject("request");
+				JSONObject jResponse = jEntry.getJSONObject("response");
+				Request request = new Request();
+				entry.request = request;
+				request.httpVersion = jRequest.getString("httpVersion");
+				request.method = Method.valueOf(jRequest.getString("method"));
+				try {
+					request.url = new URL(jRequest.getString("url"));
+				} catch (MalformedURLException e) {
+					throw new JSONException(e.getMessage());
+				} 
+				JSONArray jHeaders = getOptionalArray(jRequest, "headers");
+				if(jHeaders!=null){
+					request.headers = new HashMap<>();
+					for(int j=0;j<jHeaders.length();j++){
+						JSONObject jHeader = jHeaders.getJSONObject(j);
+						request.headers.put(jHeader.getString("name"), jHeader.getString("value"));
+					}
+				}
+				JSONArray jQueryString = getOptionalArray(jRequest, "queryString");
+				if(jQueryString!=null){
+					request.queryString = new HashMap<>();
+					for(int j=0;j<jQueryString.length();j++){
+						JSONObject jQueryStringO = jQueryString.getJSONObject(j);
+						request.queryString.put(jQueryStringO.getString("name"), jQueryStringO.getString("value"));
+					}
+				}
+				JSONArray jCookies = getOptionalArray(jRequest, "cookies");
+				if(jCookies!=null){
+					request.cookies = new Cookie[jCookies.length()];
+					for(int j=0;j<jCookies.length();j++){
+						JSONObject jCookie = jCookies.getJSONObject(j);
+						Cookie cookie = new Cookie();
+						request.cookies[j] = cookie;
+						cookie.name = jCookie.getString("name");
+						cookie.value = jCookie.getString("value");
+					}
+				}
+				
+				Response response = new Response();
+				entry.response = response;
+				response.httpVersion = jResponse.getString("httpVersion");
+				response.status = jResponse.getString("status");
+				response.statusText = jResponse.getString("statusText");
+				
+			}
+			
 		}
 		return h;
+	}
+	
+	@Override
+	public String toString() {
+		return "HAR [pages=" + Arrays.toString(pages) + ",\n entries=" + Arrays.toString(entries) + "\n]";
 	}
 }
