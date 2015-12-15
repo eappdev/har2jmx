@@ -23,12 +23,49 @@ SOFTWARE.
  */
 package com.github.e2point718.har2jmx;
 
+import java.io.File;
+
+import org.apache.commons.cli.CommandLine;
+import org.apache.commons.cli.CommandLineParser;
+import org.apache.commons.cli.DefaultParser;
+import org.apache.commons.cli.HelpFormatter;
+import org.apache.commons.cli.Option;
+import org.apache.commons.cli.Options;
+import org.apache.commons.cli.ParseException;
+
 public class HAR2JMX {
 
 	public static void main(String[] args) {
-		
+		try {
+			parseCommandLine(args);
+		} catch (ParseException e) {
+			throw new RuntimeException(e);
+		}
 	}
-	
 
+	public static final String CMD_SWITCH_jmeterHome="jmeterHome";
+	private static CommandLine parseCommandLine(String[] args) throws ParseException{
+		Options options = new Options();
+		Option jMeterHome = Option.builder(CMD_SWITCH_jmeterHome).hasArg().required().desc("JMeter Home folder").build();
+		options.addOption(jMeterHome);
+		CommandLineParser parser = new DefaultParser();
+		CommandLine line;
+		try {
+			line = parser.parse(options, args);
+		} catch (ParseException e) {
+			HelpFormatter formatter = new HelpFormatter();
+			formatter.printHelp( "har2jmx", options );
+			throw e;
+		}
+		File jMeterHomeFolder = new File(line.getOptionValue(CMD_SWITCH_jmeterHome));
+		if(!jMeterHomeFolder.exists()){
+			throw new ParseException(jMeterHomeFolder.getAbsolutePath()+" is not accessible");
+		}
+		File jMeterSaveServiceFile = new File(jMeterHomeFolder,"bin/saveservice.properties");
+		if(!jMeterSaveServiceFile.exists()){
+			throw new ParseException(jMeterSaveServiceFile.getAbsolutePath()+" is not accessible. Please verify jmeterHome location "+jMeterHomeFolder.getAbsolutePath());
+		}		
+		return line;
+	}
 
 }

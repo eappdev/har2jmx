@@ -40,6 +40,7 @@ import org.json.JSONObject;
 /**
  * This class includes the attributes from the HAR spec that are relevant for JMX files
  * https://dvcs.w3.org/hg/webperf/raw-file/tip/specs/HAR/Overview.html
+ * TODO remove this class (populate reflectively or directly build JMX from JSON)
  */
 final class HAR implements Serializable {
 
@@ -105,7 +106,7 @@ final class HAR implements Serializable {
 	
 
 	static final class Response {
-		String status;
+		int status;
 		String statusText;
 		String httpVersion;
 		long headersSize;
@@ -114,13 +115,25 @@ final class HAR implements Serializable {
 		Cookie[] cookies;
 		
 		Map<String,String> headers;
+		ResponseContent content;
 
 		@Override
 		public String toString() {
 			return "Response [status=" + status + ", statusText=" + statusText + ", httpVersion=" + httpVersion
 					+ ", headersSize=" + headersSize + ", bodySize=" + bodySize + ", cookies="
-					+ Arrays.toString(cookies) + ", headers=" + headers + "]";
+					+ Arrays.toString(cookies) + ", headers=" + headers + ",\n content=" + content + "\n]";
 		}
+	}
+	
+	static final class ResponseContent {
+		long size;
+		String mimeType;
+		String text;
+		@Override
+		public String toString() {
+			return "ResponseContent [size=" + size + ", mimeType=" + mimeType + ", text=" + text + "]";
+		}
+		
 	}
 	
 	static final class PostData {
@@ -233,8 +246,7 @@ final class HAR implements Serializable {
 				Entry entry = new Entry();
 				h.entries[i] = entry;
 				entry.pageref = pages.get(getOptionalProperty(jEntry,"pageref"));
-				JSONObject jRequest = jEntry.getJSONObject("request");
-				JSONObject jResponse = jEntry.getJSONObject("response");
+				JSONObject jRequest = jEntry.getJSONObject("request");				
 				Request request = new Request();
 				entry.request = request;
 				request.httpVersion = jRequest.getString("httpVersion");
@@ -272,12 +284,60 @@ final class HAR implements Serializable {
 					}
 				}
 				
+				JSONObject jPostData = getOptionalObject(jRequest,("postData"));
+				if(jPostData!=null){
+					PostData pd = new PostData();
+					request.postData = pd;
+					pd.mimeType = jPostData.getString("mimeType");
+					pd.text = getOptionalProperty(jPostData, "text");
+					
+					JSONArray jPostParams = getOptionalArray(jPostData, "params");
+					if(jPostParams!=null){
+						pd.params = new PostDataParam[jPostParams.length()];
+						for(int j=0;j<jPostParams.length();j++){
+							PostDataParam pdp = new PostDataParam();
+							JSONObject jPostDataParam = jPostParams.getJSONObject(j);
+							pd.params[j] = pdp;
+							pdp.name = getOptionalProperty(jPostDataParam, "name");
+							pdp.value = getOptionalProperty(jPostDataParam, "value");
+							pdp.contentType = getOptionalProperty(jPostDataParam, "contentType");
+							pdp.fileName = getOptionalProperty(jPostDataParam, "fileName");
+						}
+					}
+				}
+				JSONObject jResponse = jEntry.getJSONObject("response");
 				Response response = new Response();
 				entry.response = response;
 				response.httpVersion = jResponse.getString("httpVersion");
-				response.status = jResponse.getString("status");
+				response.status = jResponse.getInt("status");
 				response.statusText = jResponse.getString("statusText");
-				
+				jHeaders = getOptionalArray(jResponse, "headers");
+				if(jHeaders!=null){
+					response.headers = new HashMap<>();
+					for(int j=0;j<jHeaders.length();j++){
+						JSONObject jHeader = jHeaders.getJSONObject(j);
+						response.headers.put(jHeader.getString("name"), jHeader.getString("value"));
+					}
+				}
+				jCookies = getOptionalArray(jResponse, "cookies");
+				if(jCookies!=null){
+					response.cookies = new Cookie[jCookies.length()];
+					for(int j=0;j<jCookies.length();j++){
+						JSONObject jCookie = jCookies.getJSONObject(j);
+						Cookie cookie = new Cookie();
+						response.cookies[j] = cookie;
+						cookie.name = jCookie.getString("name");
+						cookie.value = jCookie.getString("value");
+					}
+				}
+				JSONObject jContent = getOptionalObject(jResponse,("content"));
+				if(jContent!=null){
+					ResponseContent content = new ResponseContent();
+					response.content = content;
+					content.size = jContent.getLong("size");
+					content.mimeType =jContent.getString("mimeType");
+					content.text = getOptionalProperty(jContent,("text"));
+				}
 			}
 			
 		}

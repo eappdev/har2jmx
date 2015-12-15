@@ -24,5 +24,16 @@ SOFTWARE.
 package com.github.e2point718.har2jmx;
 
 class JMX {
+	
+	
+	
+	public static JMX build(HAR har){
+		JMX jmx = new JMX();
+		return jmx;
+	}
+	
+	public static JMX build(String har){		
+		return build(HAR.build(har));
+	}
 
 }

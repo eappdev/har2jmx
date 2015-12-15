@@ -1,0 +1,3380 @@
+{
+  "log": {
+    "version": "1.2",
+    "creator": {
+      "name": "WebInspector",
+      "version": "537.36"
+    },
+    "pages": [
+      {
+        "startedDateTime": "2015-12-10T12:10:00.974Z",
+        "id": "page_2",
+        "title": "http://www.softwareishard.com/blog",
+        "pageTimings": {
+          "onContentLoad": 3025.0559999999496,
+          "onLoad": 3373.0639999998857
+        }
+      }
+    ],
+    "entries": [
+      {
+        "startedDateTime": "2015-12-10T12:10:00.974Z",
+        "time": 436.9480000000294,
+        "request": {
+          "method": "POST",
+          "url": "http://www.softwareishard.com/blog",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Cookie",
+              "value": "__utmz=57327400.1449746888.5.4.utmccn=(referral)|utmcsr=google.com|utmcct=/|utmcmd=referral; __utma=57327400.1236819735.1449365597.1449746888.1449749319.6; __utmc=57327400; __utmb=57327400"
+            },
+            {
+              "name": "Origin",
+              "value": "http://www.softwareishard.com"
+            },
+            {
+              "name": "Accept-Encoding",
+              "value": "gzip, deflate"
+            },
+            {
+              "name": "Host",
+              "value": "www.softwareishard.com"
+            },
+            {
+              "name": "Accept-Language",
+              "value": "en-US,en;q=0.8"
+            },
+            {
+              "name": "Upgrade-Insecure-Requests",
+              "value": "1"
+            },
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36"
+            },
+            {
+              "name": "Content-Type",
+              "value": "application/x-www-form-urlencoded"
+            },
+            {
+              "name": "Accept",
+              "value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8"
+            },
+            {
+              "name": "Cache-Control",
+              "value": "max-age=0"
+            },
+            {
+              "name": "Referer",
+              "value": "http://www.softwareishard.com/blog/?s=test"
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "name": "Content-Length",
+              "value": "6"
+            }
+          ],
+          "queryString": [],
+          "cookies": [
+            {
+              "name": "__utmz",
+              "value": "57327400.1449746888.5.4.utmccn=(referral)|utmcsr=google.com|utmcct=/|utmcmd=referral",
+              "expires": null,
+              "httpOnly": false,
+              "secure": false
+            },
+            {
+              "name": "__utma",
+              "value": "57327400.1236819735.1449365597.1449746888.1449749319.6",
+              "expires": null,
+              "httpOnly": false,
+              "secure": false
+            },
+            {
+              "name": "__utmc",
+              "value": "57327400",
+              "expires": null,
+              "httpOnly": false,
+              "secure": false
+            },
+            {
+              "name": "__utmb",
+              "value": "57327400",
+              "expires": null,
+              "httpOnly": false,
+              "secure": false
+            }
+          ],
+          "headersSize": 758,
+          "bodySize": 6,
+          "postData": {
+            "mimeType": "application/x-www-form-urlencoded",
+            "text": "s=test",
+            "params": [
+              {
+                "name": "s",
+                "value": "test"
+              }
+            ]
+          }
+        },
+        "response": {
+          "status": 301,
+          "statusText": "Moved Permanently",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Date",
+              "value": "Thu, 10 Dec 2015 12:10:01 GMT"
+            },
+            {
+              "name": "Server",
+              "value": "Apache"
+            },
+            {
+              "name": "Content-Type",
+              "value": "text/html; charset=iso-8859-1"
+            },
+            {
+              "name": "Location",
+              "value": "http://www.softwareishard.com/blog/"
+            },
+            {
+              "name": "Cache-Control",
+              "value": "max-age=7200"
+            },
+            {
+              "name": "Connection",
+              "value": "close"
+            },
+            {
+              "name": "Content-Length",
+              "value": "315"
+            },
+            {
+              "name": "Expires",
+              "value": "Thu, 10 Dec 2015 14:10:01 GMT"
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 0,
+            "mimeType": "text/html",
+            "compression": 0
+          },
+          "redirectURL": "http://www.softwareishard.com/blog/",
+          "headersSize": 288,
+          "bodySize": 0,
+          "_transferSize": 288
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 0.759000000016386,
+          "dns": 187.5300000001516,
+          "connect": 122.28299999969803,
+          "send": 0.07000000004995854,
+          "wait": 125.28400000019303,
+          "receive": 1.0219999999204106,
+          "ssl": -1
+        },
+        "connection": "13367",
+        "pageref": "page_2"
+      },
+      {
+        "startedDateTime": "2015-12-10T12:10:01.411Z",
+        "time": 2509.186999999656,
+        "request": {
+          "method": "GET",
+          "url": "http://www.softwareishard.com/blog/",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Accept-Encoding",
+              "value": "gzip, deflate, sdch"
+            },
+            {
+              "name": "Host",
+              "value": "www.softwareishard.com"
+            },
+            {
+              "name": "Accept-Language",
+              "value": "en-US,en;q=0.8"
+            },
+            {
+              "name": "Upgrade-Insecure-Requests",
+              "value": "1"
+            },
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36"
+            },
+            {
+              "name": "Accept",
+              "value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8"
+            },
+            {
+              "name": "Referer",
+              "value": "http://www.softwareishard.com/blog/?s=test"
+            },
+            {
+              "name": "Cookie",
+              "value": "__utmz=57327400.1449746888.5.4.utmccn=(referral)|utmcsr=google.com|utmcct=/|utmcmd=referral; __utma=57327400.1236819735.1449365597.1449746888.1449749319.6; __utmc=57327400; __utmb=57327400"
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "name": "Cache-Control",
+              "value": "max-age=0"
+            }
+          ],
+          "queryString": [],
+          "cookies": [
+            {
+              "name": "__utmz",
+              "value": "57327400.1449746888.5.4.utmccn=(referral)|utmcsr=google.com|utmcct=/|utmcmd=referral",
+              "expires": null,
+              "httpOnly": false,
+              "secure": false
+            },
+            {
+              "name": "__utma",
+              "value": "57327400.1236819735.1449365597.1449746888.1449749319.6",
+              "expires": null,
+              "httpOnly": false,
+              "secure": false
+            },
+            {
+              "name": "__utmc",
+              "value": "57327400",
+              "expires": null,
+              "httpOnly": false,
+              "secure": false
+            },
+            {
+              "name": "__utmb",
+              "value": "57327400",
+              "expires": null,
+              "httpOnly": false,
+              "secure": false
+            }
+          ],
+          "headersSize": 657,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "X-Pingback",
+              "value": "http://www.softwareishard.com/blog/xmlrpc.php"
+            },
+            {
+              "name": "Date",
+              "value": "Thu, 10 Dec 2015 12:10:01 GMT"
+            },
+            {
+              "name": "Server",
+              "value": "Apache"
+            },
+            {
+              "name": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "name": "Content-Type",
+              "value": "text/html; charset=UTF-8"
+            },
+            {
+              "name": "Cache-Control",
+              "value": "max-age=7200"
+            },
+            {
+              "name": "Connection",
+              "value": "Keep-Alive"
+            },
+            {
+              "name": "Keep-Alive",
+              "value": "timeout=5, max=50"
+            },
+            {
+              "name": "Expires",
+              "value": "Thu, 10 Dec 2015 14:10:01 GMT"
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 55764,
+            "mimeType": "text/html",
+            "compression": -13
+          },
+          "redirectURL": "",
+          "headersSize": 323,
+          "bodySize": 55777,
+          "_transferSize": 56100
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 0.700999999935448,
+          "dns": -1,
+          "connect": -1,
+          "send": 0.148999999964871,
+          "wait": 2263.2090000001895,
+          "receive": 245.12799999956633,
+          "ssl": -1
+        },
+        "connection": "13371",
+        "pageref": "page_2"
+      },
+      {
+        "startedDateTime": "2015-12-10T12:10:03.689Z",
+        "time": 0,
+        "request": {
+          "method": "GET",
+          "url": "http://www.softwareishard.com/blog/wp-content/themes/miniBits/miniBits/style.css",
+          "httpVersion": "unknown",
+          "headers": [
+            {
+              "name": "X-DevTools-Emulate-Network-Conditions-Client-Id",
+              "value": "0A9D857F-735E-4887-B40F-ED3556954196"
+            },
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36"
+            }
+          ],
+          "queryString": [],
+          "cookies": [],
+          "headersSize": -1,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "unknown",
+          "headers": [
+            {
+              "name": "Date",
+              "value": "Wed, 09 Dec 2015 11:03:19 GMT"
+            },
+            {
+              "name": "Last-Modified",
+              "value": "Thu, 09 Aug 2012 16:09:55 GMT"
+            },
+            {
+              "name": "Server",
+              "value": "Apache"
+            },
+            {
+              "name": "ETag",
+              "value": "\"1759e2b-2415-4c6d7754b9ac0\""
+            },
+            {
+              "name": "Content-Type",
+              "value": "text/css"
+            },
+            {
+              "name": "Cache-Control",
+              "value": "max-age=604800"
+            },
+            {
+              "name": "Accept-Ranges",
+              "value": "bytes"
+            },
+            {
+              "name": "Content-Length",
+              "value": "9237"
+            },
+            {
+              "name": "Expires",
+              "value": "Wed, 16 Dec 2015 11:03:19 GMT"
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 9237,
+            "mimeType": "text/css"
+          },
+          "redirectURL": "",
+          "headersSize": -1,
+          "bodySize": 0,
+          "_transferSize": 0
+        },
+        "cache": {},
+        "timings": {
+          "blocked": -1,
+          "dns": -1,
+          "connect": -1,
+          "send": 0,
+          "wait": 0,
+          "receive": 0,
+          "ssl": -1
+        },
+        "pageref": "page_2"
+      },
+      {
+        "startedDateTime": "2015-12-10T12:10:03.692Z",
+        "time": 256.22500000008586,
+        "request": {
+          "method": "GET",
+          "url": "http://www.softwareishard.com/blog/wp-includes/js/l10n.js?ver=20101110",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Cookie",
+              "value": "__utmz=57327400.1449746888.5.4.utmccn=(referral)|utmcsr=google.com|utmcct=/|utmcmd=referral; __utma=57327400.1236819735.1449365597.1449746888.1449749319.6; __utmc=57327400; __utmb=57327400"
+            },
+            {
+              "name": "Accept-Encoding",
+              "value": "gzip, deflate, sdch"
+            },
+            {
+              "name": "Host",
+              "value": "www.softwareishard.com"
+            },
+            {
+              "name": "Accept-Language",
+              "value": "en-US,en;q=0.8"
+            },
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36"
+            },
+            {
+              "name": "Accept",
+              "value": "*/*"
+            },
+            {
+              "name": "Referer",
+              "value": "http://www.softwareishard.com/blog/"
+            },
+            {
+              "name": "If-None-Match",
+              "value": "\"1759f2c-134-49f62b8918ac0\""
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "name": "If-Modified-Since",
+              "value": "Sat, 26 Mar 2011 13:30:59 GMT"
+            }
+          ],
+          "queryString": [
+            {
+              "name": "ver",
+              "value": "20101110"
+            }
+          ],
+          "cookies": [
+            {
+              "name": "__utmz",
+              "value": "57327400.1449746888.5.4.utmccn=(referral)|utmcsr=google.com|utmcct=/|utmcmd=referral",
+              "expires": null,
+              "httpOnly": false,
+              "secure": false
+            },
+            {
+              "name": "__utma",
+              "value": "57327400.1236819735.1449365597.1449746888.1449749319.6",
+              "expires": null,
+              "httpOnly": false,
+              "secure": false
+            },
+            {
+              "name": "__utmc",
+              "value": "57327400",
+              "expires": null,
+              "httpOnly": false,
+              "secure": false
+            },
+            {
+              "name": "__utmb",
+              "value": "57327400",
+              "expires": null,
+              "httpOnly": false,
+              "secure": false
+            }
+          ],
+          "headersSize": 652,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 304,
+          "statusText": "Not Modified",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Date",
+              "value": "Thu, 10 Dec 2015 12:10:03 GMT"
+            },
+            {
+              "name": "Cache-Control",
+              "value": "max-age=30"
+            },
+            {
+              "name": "ETag",
+              "value": "\"1759f2c-134-49f62b8918ac0\""
+            },
+            {
+              "name": "Server",
+              "value": "Apache"
+            },
+            {
+              "name": "Connection",
+              "value": "Keep-Alive"
+            },
+            {
+              "name": "Keep-Alive",
+              "value": "timeout=5, max=50"
+            },
+            {
+              "name": "Expires",
+              "value": "Thu, 10 Dec 2015 12:10:33 GMT"
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 308,
+            "mimeType": "application/x-javascript"
+          },
+          "redirectURL": "",
+          "headersSize": 239,
+          "bodySize": 0,
+          "_transferSize": 239
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 4.63400000035108,
+          "dns": 0.0869999998940294,
+          "connect": 125.0639999998389,
+          "send": 0.06600000006000073,
+          "wait": 125.66400000014298,
+          "receive": 0.7099999997988675,
+          "ssl": -1
+        },
+        "connection": "13395",
+        "pageref": "page_2"
+      },
+      {
+        "startedDateTime": "2015-12-10T12:10:03.692Z",
+        "time": 257.63899999992645,
+        "request": {
+          "method": "GET",
+          "url": "http://www.softwareishard.com/blog/wp-includes/js/prototype.js?ver=1.6.1",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Cookie",
+              "value": "__utmz=57327400.1449746888.5.4.utmccn=(referral)|utmcsr=google.com|utmcct=/|utmcmd=referral; __utma=57327400.1236819735.1449365597.1449746888.1449749319.6; __utmc=57327400; __utmb=57327400"
+            },
+            {
+              "name": "Accept-Encoding",
+              "value": "gzip, deflate, sdch"
+            },
+            {
+              "name": "Host",
+              "value": "www.softwareishard.com"
+            },
+            {
+              "name": "Accept-Language",
+              "value": "en-US,en;q=0.8"
+            },
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36"
+            },
+            {
+              "name": "Accept",
+              "value": "*/*"
+            },
+            {
+              "name": "Referer",
+              "value": "http://www.softwareishard.com/blog/"
+            },
+            {
+              "name": "If-None-Match",
+              "value": "\"1759f2d-2224e-49f62b8bf5180\""
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "name": "If-Modified-Since",
+              "value": "Sat, 26 Mar 2011 13:31:02 GMT"
+            }
+          ],
+          "queryString": [
+            {
+              "name": "ver",
+              "value": "1.6.1"
+            }
+          ],
+          "cookies": [
+            {
+              "name": "__utmz",
+              "value": "57327400.1449746888.5.4.utmccn=(referral)|utmcsr=google.com|utmcct=/|utmcmd=referral",
+              "expires": null,
+              "httpOnly": false,
+              "secure": false
+            },
+            {
+              "name": "__utma",
+              "value": "57327400.1236819735.1449365597.1449746888.1449749319.6",
+              "expires": null,
+              "httpOnly": false,
+              "secure": false
+            },
+            {
+              "name": "__utmc",
+              "value": "57327400",
+              "expires": null,
+              "httpOnly": false,
+              "secure": false
+            },
+            {
+              "name": "__utmb",
+              "value": "57327400",
+              "expires": null,
+              "httpOnly": false,
+              "secure": false
+            }
+          ],
+          "headersSize": 656,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 304,
+          "statusText": "Not Modified",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Date",
+              "value": "Thu, 10 Dec 2015 12:10:03 GMT"
+            },
+            {
+              "name": "Cache-Control",
+              "value": "max-age=30"
+            },
+            {
+              "name": "ETag",
+              "value": "\"1759f2d-2224e-49f62b8bf5180\""
+            },
+            {
+              "name": "Server",
+              "value": "Apache"
+            },
+            {
+              "name": "Connection",
+              "value": "Keep-Alive"
+            },
+            {
+              "name": "Keep-Alive",
+              "value": "timeout=5, max=50"
+            },
+            {
+              "name": "Expires",
+              "value": "Thu, 10 Dec 2015 12:10:33 GMT"
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 139854,
+            "mimeType": "application/x-javascript"
+          },
+          "redirectURL": "",
+          "headersSize": 241,
+          "bodySize": 0,
+          "_transferSize": 241
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 4.36599999966347,
+          "dns": 0.017000000298140527,
+          "connect": 124.6959999998584,
+          "send": 0.03500000002497927,
+          "wait": 127.508000000034,
+          "receive": 1.0170000000474602,
+          "ssl": -1
+        },
+        "connection": "13407",
+        "pageref": "page_2"
+      },
+      {
+        "startedDateTime": "2015-12-10T12:10:03.693Z",
+        "time": 260.94600000033097,
+        "request": {
+          "method": "GET",
+          "url": "http://www.softwareishard.com/blog/wp-includes/js/scriptaculous/wp-scriptaculous.js?ver=1.8.3",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Cookie",
+              "value": "__utmz=57327400.1449746888.5.4.utmccn=(referral)|utmcsr=google.com|utmcct=/|utmcmd=referral; __utma=57327400.1236819735.1449365597.1449746888.1449749319.6; __utmc=57327400; __utmb=57327400"
+            },
+            {
+              "name": "Accept-Encoding",
+              "value": "gzip, deflate, sdch"
+            },
+            {
+              "name": "Host",
+              "value": "www.softwareishard.com"
+            },
+            {
+              "name": "Accept-Language",
+              "value": "en-US,en;q=0.8"
+            },
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36"
+            },
+            {
+              "name": "Accept",
+              "value": "*/*"
+            },
+            {
+              "name": "Referer",
+              "value": "http://www.softwareishard.com/blog/"
+            },
+            {
+              "name": "If-None-Match",
+              "value": "\"1759f77-b7f-49f62baf3e4c0\""
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "name": "If-Modified-Since",
+              "value": "Sat, 26 Mar 2011 13:31:39 GMT"
+            }
+          ],
+          "queryString": [
+            {
+              "name": "ver",
+              "value": "1.8.3"
+            }
+          ],
+          "cookies": [
+            {
+              "name": "__utmz",
+              "value": "57327400.1449746888.5.4.utmccn=(referral)|utmcsr=google.com|utmcct=/|utmcmd=referral",
+              "expires": null,
+              "httpOnly": false,
+              "secure": false
+            },
+            {
+              "name": "__utma",
+              "value": "57327400.1236819735.1449365597.1449746888.1449749319.6",
+              "expires": null,
+              "httpOnly": false,
+              "secure": false
+            },
+            {
+              "name": "__utmc",
+              "value": "57327400",
+              "expires": null,
+              "httpOnly": false,
+              "secure": false
+            },
+            {
+              "name": "__utmb",
+              "value": "57327400",
+              "expires": null,
+              "httpOnly": false,
+              "secure": false
+            }
+          ],
+          "headersSize": 675,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 304,
+          "statusText": "Not Modified",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Date",
+              "value": "Thu, 10 Dec 2015 12:10:03 GMT"
+            },
+            {
+              "name": "Cache-Control",
+              "value": "max-age=30"
+            },
+            {
+              "name": "ETag",
+              "value": "\"1759f77-b7f-49f62baf3e4c0\""
+            },
+            {
+              "name": "Server",
+              "value": "Apache"
+            },
+            {
+              "name": "Connection",
+              "value": "Keep-Alive"
+            },
+            {
+              "name": "Keep-Alive",
+              "value": "timeout=5, max=50"
+            },
+            {
+              "name": "Expires",
+              "value": "Thu, 10 Dec 2015 12:10:33 GMT"
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 2943,
+            "mimeType": "application/x-javascript"
+          },
+          "redirectURL": "",
+          "headersSize": 239,
+          "bodySize": 0,
+          "_transferSize": 239
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 3.55800000033923,
+          "dns": 0.006999999641270183,
+          "connect": 127.20100000024149,
+          "send": 0.03599999990899505,
+          "wait": 128.643999999894,
+          "receive": 1.5000000003059881,
+          "ssl": -1
+        },
+        "connection": "13404",
+        "pageref": "page_2"
+      },
+      {
+        "startedDateTime": "2015-12-10T12:10:03.693Z",
+        "time": 262.27700000026744,
+        "request": {
+          "method": "GET",
+          "url": "http://www.softwareishard.com/blog/wp-includes/js/scriptaculous/effects.js?ver=1.8.3",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Cookie",
+              "value": "__utmz=57327400.1449746888.5.4.utmccn=(referral)|utmcsr=google.com|utmcct=/|utmcmd=referral; __utma=57327400.1236819735.1449365597.1449746888.1449749319.6; __utmc=57327400; __utmb=57327400"
+            },
+            {
+              "name": "Accept-Encoding",
+              "value": "gzip, deflate, sdch"
+            },
+            {
+              "name": "Host",
+              "value": "www.softwareishard.com"
+            },
+            {
+              "name": "Accept-Language",
+              "value": "en-US,en;q=0.8"
+            },
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36"
+            },
+            {
+              "name": "Accept",
+              "value": "*/*"
+            },
+            {
+              "name": "Referer",
+              "value": "http://www.softwareishard.com/blog/"
+            },
+            {
+              "name": "If-None-Match",
+              "value": "\"1759f72-9647-49f62bae4a280\""
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "name": "If-Modified-Since",
+              "value": "Sat, 26 Mar 2011 13:31:38 GMT"
+            }
+          ],
+          "queryString": [
+            {
+              "name": "ver",
+              "value": "1.8.3"
+            }
+          ],
+          "cookies": [
+            {
+              "name": "__utmz",
+              "value": "57327400.1449746888.5.4.utmccn=(referral)|utmcsr=google.com|utmcct=/|utmcmd=referral",
+              "expires": null,
+              "httpOnly": false,
+              "secure": false
+            },
+            {
+              "name": "__utma",
+              "value": "57327400.1236819735.1449365597.1449746888.1449749319.6",
+              "expires": null,
+              "httpOnly": false,
+              "secure": false
+            },
+            {
+              "name": "__utmc",
+              "value": "57327400",
+              "expires": null,
+              "httpOnly": false,
+              "secure": false
+            },
+            {
+              "name": "__utmb",
+              "value": "57327400",
+              "expires": null,
+              "httpOnly": false,
+              "secure": false
+            }
+          ],
+          "headersSize": 667,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 304,
+          "statusText": "Not Modified",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Date",
+              "value": "Thu, 10 Dec 2015 12:10:03 GMT"
+            },
+            {
+              "name": "Cache-Control",
+              "value": "max-age=30"
+            },
+            {
+              "name": "ETag",
+              "value": "\"1759f72-9647-49f62bae4a280\""
+            },
+            {
+              "name": "Server",
+              "value": "Apache"
+            },
+            {
+              "name": "Connection",
+              "value": "Keep-Alive"
+            },
+            {
+              "name": "Keep-Alive",
+              "value": "timeout=5, max=50"
+            },
+            {
+              "name": "Expires",
+              "value": "Thu, 10 Dec 2015 12:10:33 GMT"
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 38471,
+            "mimeType": "application/x-javascript"
+          },
+          "redirectURL": "",
+          "headersSize": 240,
+          "bodySize": 0,
+          "_transferSize": 240
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 2.76800000028743,
+          "dns": 0.006999999641270183,
+          "connect": 127.3650000002813,
+          "send": 0.031000000036016218,
+          "wait": 130.54400000009997,
+          "receive": 1.5619999999214542,
+          "ssl": -1
+        },
+        "connection": "13401",
+        "pageref": "page_2"
+      },
+      {
+        "startedDateTime": "2015-12-10T12:10:03.691Z",
+        "time": 0,
+        "request": {
+          "method": "GET",
+          "url": "http://www.softwareishard.com/blog/wp-content/plugins/deans_code_highlighter/geshi.css",
+          "httpVersion": "unknown",
+          "headers": [
+            {
+              "name": "X-DevTools-Emulate-Network-Conditions-Client-Id",
+              "value": "0A9D857F-735E-4887-B40F-ED3556954196"
+            },
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36"
+            }
+          ],
+          "queryString": [],
+          "cookies": [],
+          "headersSize": -1,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "unknown",
+          "headers": [
+            {
+              "name": "Date",
+              "value": "Wed, 09 Dec 2015 11:03:19 GMT"
+            },
+            {
+              "name": "Last-Modified",
+              "value": "Sat, 26 Apr 2008 09:29:28 GMT"
+            },
+            {
+              "name": "Server",
+              "value": "Apache"
+            },
+            {
+              "name": "ETag",
+              "value": "\"1759b96-40a-44bc351af6e00\""
+            },
+            {
+              "name": "Content-Type",
+              "value": "text/css"
+            },
+            {
+              "name": "Cache-Control",
+              "value": "max-age=604800"
+            },
+            {
+              "name": "Accept-Ranges",
+              "value": "bytes"
+            },
+            {
+              "name": "Content-Length",
+              "value": "1034"
+            },
+            {
+              "name": "Expires",
+              "value": "Wed, 16 Dec 2015 11:03:19 GMT"
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 1034,
+            "mimeType": "text/css"
+          },
+          "redirectURL": "",
+          "headersSize": -1,
+          "bodySize": 0,
+          "_transferSize": 0
+        },
+        "cache": {},
+        "timings": {
+          "blocked": -1,
+          "dns": -1,
+          "connect": -1,
+          "send": 0,
+          "wait": 0,
+          "receive": 0,
+          "ssl": -1
+        },
+        "pageref": "page_2"
+      },
+      {
+        "startedDateTime": "2015-12-10T12:10:03.691Z",
+        "time": 0,
+        "request": {
+          "method": "GET",
+          "url": "http://www.softwareishard.com/blog/wp-content/plugins/wp-lightbox2/css/lightbox.css",
+          "httpVersion": "unknown",
+          "headers": [
+            {
+              "name": "X-DevTools-Emulate-Network-Conditions-Client-Id",
+              "value": "0A9D857F-735E-4887-B40F-ED3556954196"
+            },
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36"
+            }
+          ],
+          "queryString": [],
+          "cookies": [],
+          "headersSize": -1,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "unknown",
+          "headers": [
+            {
+              "name": "Date",
+              "value": "Wed, 09 Dec 2015 11:03:19 GMT"
+            },
+            {
+              "name": "Last-Modified",
+              "value": "Sat, 26 Apr 2008 09:51:18 GMT"
+            },
+            {
+              "name": "Server",
+              "value": "Apache"
+            },
+            {
+              "name": "ETag",
+              "value": "\"1759c77-589-44bc39fc47180\""
+            },
+            {
+              "name": "Content-Type",
+              "value": "text/css"
+            },
+            {
+              "name": "Cache-Control",
+              "value": "max-age=604800"
+            },
+            {
+              "name": "Accept-Ranges",
+              "value": "bytes"
+            },
+            {
+              "name": "Content-Length",
+              "value": "1417"
+            },
+            {
+              "name": "Expires",
+              "value": "Wed, 16 Dec 2015 11:03:19 GMT"
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 1417,
+            "mimeType": "text/css"
+          },
+          "redirectURL": "",
+          "headersSize": -1,
+          "bodySize": 0,
+          "_transferSize": 0
+        },
+        "cache": {},
+        "timings": {
+          "blocked": -1,
+          "dns": -1,
+          "connect": -1,
+          "send": 0,
+          "wait": 0,
+          "receive": 0,
+          "ssl": -1
+        },
+        "pageref": "page_2"
+      },
+      {
+        "startedDateTime": "2015-12-10T12:10:03.693Z",
+        "time": 266.791000000012,
+        "request": {
+          "method": "GET",
+          "url": "http://www.softwareishard.com/blog/wp-content/plugins/wp-lightbox2/js/lightbox.js",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Cookie",
+              "value": "__utmz=57327400.1449746888.5.4.utmccn=(referral)|utmcsr=google.com|utmcct=/|utmcmd=referral; __utma=57327400.1236819735.1449365597.1449746888.1449749319.6; __utmc=57327400; __utmb=57327400"
+            },
+            {
+              "name": "Accept-Encoding",
+              "value": "gzip, deflate, sdch"
+            },
+            {
+              "name": "Host",
+              "value": "www.softwareishard.com"
+            },
+            {
+              "name": "Accept-Language",
+              "value": "en-US,en;q=0.8"
+            },
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36"
+            },
+            {
+              "name": "Accept",
+              "value": "*/*"
+            },
+            {
+              "name": "Referer",
+              "value": "http://www.softwareishard.com/blog/"
+            },
+            {
+              "name": "If-None-Match",
+              "value": "\"1759c81-5d1d-44bc39ff23840\""
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "name": "If-Modified-Since",
+              "value": "Sat, 26 Apr 2008 09:51:21 GMT"
+            }
+          ],
+          "queryString": [],
+          "cookies": [
+            {
+              "name": "__utmz",
+              "value": "57327400.1449746888.5.4.utmccn=(referral)|utmcsr=google.com|utmcct=/|utmcmd=referral",
+              "expires": null,
+              "httpOnly": false,
+              "secure": false
+            },
+            {
+              "name": "__utma",
+              "value": "57327400.1236819735.1449365597.1449746888.1449749319.6",
+              "expires": null,
+              "httpOnly": false,
+              "secure": false
+            },
+            {
+              "name": "__utmc",
+              "value": "57327400",
+              "expires": null,
+              "httpOnly": false,
+              "secure": false
+            },
+            {
+              "name": "__utmb",
+              "value": "57327400",
+              "expires": null,
+              "httpOnly": false,
+              "secure": false
+            }
+          ],
+          "headersSize": 664,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 304,
+          "statusText": "Not Modified",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Date",
+              "value": "Thu, 10 Dec 2015 12:10:03 GMT"
+            },
+            {
+              "name": "Cache-Control",
+              "value": "max-age=30"
+            },
+            {
+              "name": "ETag",
+              "value": "\"1759c81-5d1d-44bc39ff23840\""
+            },
+            {
+              "name": "Server",
+              "value": "Apache"
+            },
+            {
+              "name": "Connection",
+              "value": "Keep-Alive"
+            },
+            {
+              "name": "Keep-Alive",
+              "value": "timeout=5, max=50"
+            },
+            {
+              "name": "Expires",
+              "value": "Thu, 10 Dec 2015 12:10:33 GMT"
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 23837,
+            "mimeType": "application/x-javascript"
+          },
+          "redirectURL": "",
+          "headersSize": 240,
+          "bodySize": 0,
+          "_transferSize": 240
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 2.411999999822,
+          "dns": 0.007999999979799721,
+          "connect": 130.0100000003112,
+          "send": 0.10899999961100093,
+          "wait": 132.46300000037098,
+          "receive": 1.7889999999169959,
+          "ssl": -1
+        },
+        "connection": "13410",
+        "pageref": "page_2"
+      },
+      {
+        "startedDateTime": "2015-12-10T12:10:03.692Z",
+        "time": 0,
+        "request": {
+          "method": "GET",
+          "url": "http://www.softwareishard.com/blog/wp-content/themes/miniBits/miniBits/img/rss.gif",
+          "httpVersion": "unknown",
+          "headers": [
+            {
+              "name": "X-DevTools-Emulate-Network-Conditions-Client-Id",
+              "value": "0A9D857F-735E-4887-B40F-ED3556954196"
+            },
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36"
+            }
+          ],
+          "queryString": [],
+          "cookies": [],
+          "headersSize": -1,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "unknown",
+          "headers": [
+            {
+              "name": "Date",
+              "value": "Wed, 09 Dec 2015 11:03:19 GMT"
+            },
+            {
+              "name": "Last-Modified",
+              "value": "Sun, 27 Jun 2010 08:24:59 GMT"
+            },
+            {
+              "name": "Server",
+              "value": "Apache"
+            },
+            {
+              "name": "ETag",
+              "value": "\"1759e32-26b-489febd642cc0\""
+            },
+            {
+              "name": "Content-Type",
+              "value": "image/gif"
+            },
+            {
+              "name": "Cache-Control",
+              "value": "max-age=1209600"
+            },
+            {
+              "name": "Accept-Ranges",
+              "value": "bytes"
+            },
+            {
+              "name": "Content-Length",
+              "value": "619"
+            },
+            {
+              "name": "Expires",
+              "value": "Wed, 23 Dec 2015 11:03:19 GMT"
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 619,
+            "mimeType": "image/gif"
+          },
+          "redirectURL": "",
+          "headersSize": -1,
+          "bodySize": 0,
+          "_transferSize": 0
+        },
+        "cache": {},
+        "timings": {
+          "blocked": -1,
+          "dns": -1,
+          "connect": -1,
+          "send": 0,
+          "wait": 0,
+          "receive": 0,
+          "ssl": -1
+        },
+        "pageref": "page_2"
+      },
+      {
+        "startedDateTime": "2015-12-10T12:10:03.694Z",
+        "time": 260.0879999999961,
+        "request": {
+          "method": "GET",
+          "url": "http://softwareishard.com/extensions/pixelperfect/images/logo_64x64.png",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Accept-Encoding",
+              "value": "gzip, deflate, sdch"
+            },
+            {
+              "name": "Host",
+              "value": "softwareishard.com"
+            },
+            {
+              "name": "Accept-Language",
+              "value": "en-US,en;q=0.8"
+            },
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36"
+            },
+            {
+              "name": "Accept",
+              "value": "image/webp,image/*,*/*;q=0.8"
+            },
+            {
+              "name": "Referer",
+              "value": "http://www.softwareishard.com/blog/"
+            },
+            {
+              "name": "Cookie",
+              "value": "__utmz=57327400.1449746888.5.4.utmccn=(referral)|utmcsr=google.com|utmcct=/|utmcmd=referral; __utma=57327400.1236819735.1449365597.1449746888.1449749319.6; __utmc=57327400; __utmb=57327400"
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            }
+          ],
+          "queryString": [],
+          "cookies": [
+            {
+              "name": "__utmz",
+              "value": "57327400.1449746888.5.4.utmccn=(referral)|utmcsr=google.com|utmcct=/|utmcmd=referral",
+              "expires": null,
+              "httpOnly": false,
+              "secure": false
+            },
+            {
+              "name": "__utma",
+              "value": "57327400.1236819735.1449365597.1449746888.1449749319.6",
+              "expires": null,
+              "httpOnly": false,
+              "secure": false
+            },
+            {
+              "name": "__utmc",
+              "value": "57327400",
+              "expires": null,
+              "httpOnly": false,
+              "secure": false
+            },
+            {
+              "name": "__utmb",
+              "value": "57327400",
+              "expires": null,
+              "httpOnly": false,
+              "secure": false
+            }
+          ],
+          "headersSize": 584,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Date",
+              "value": "Thu, 10 Dec 2015 12:10:03 GMT"
+            },
+            {
+              "name": "Last-Modified",
+              "value": "Thu, 26 Mar 2015 11:13:38 GMT"
+            },
+            {
+              "name": "Server",
+              "value": "Apache"
+            },
+            {
+              "name": "ETag",
+              "value": "\"1b63af1-d31-5122f1b84bc80\""
+            },
+            {
+              "name": "Content-Type",
+              "value": "image/png"
+            },
+            {
+              "name": "Cache-Control",
+              "value": "max-age=1209600"
+            },
+            {
+              "name": "Connection",
+              "value": "Keep-Alive"
+            },
+            {
+              "name": "Accept-Ranges",
+              "value": "bytes"
+            },
+            {
+              "name": "Keep-Alive",
+              "value": "timeout=5, max=50"
+            },
+            {
+              "name": "Content-Length",
+              "value": "3377"
+            },
+            {
+              "name": "Expires",
+              "value": "Thu, 24 Dec 2015 12:10:03 GMT"
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 3377,
+            "mimeType": "image/png",
+            "compression": 0
+          },
+          "redirectURL": "",
+          "headersSize": 349,
+          "bodySize": 3377,
+          "_transferSize": 3726
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1.22400000009293,
+          "dns": 0.008999999863589903,
+          "connect": 125.08800000023248,
+          "send": 0.02700000004600156,
+          "wait": 131.65399999979797,
+          "receive": 2.0859999999631214,
+          "ssl": -1
+        },
+        "connection": "13398",
+        "pageref": "page_2"
+      },
+      {
+        "startedDateTime": "2015-12-10T12:10:03.799Z",
+        "time": 0,
+        "request": {
+          "method": "GET",
+          "url": "http://www.softwareishard.com/images/posts/firebug2a1/firebug-win.png",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Accept-Encoding",
+              "value": "gzip, deflate, sdch"
+            },
+            {
+              "name": "Host",
+              "value": "www.softwareishard.com"
+            },
+            {
+              "name": "Accept-Language",
+              "value": "en-US,en;q=0.8"
+            },
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36"
+            },
+            {
+              "name": "Accept",
+              "value": "image/webp,image/*,*/*;q=0.8"
+            },
+            {
+              "name": "Referer",
+              "value": "http://www.softwareishard.com/blog/?s=test"
+            },
+            {
+              "name": "Cookie",
+              "value": "__utmz=57327400.1449746888.5.4.utmccn=(referral)|utmcsr=google.com|utmcct=/|utmcmd=referral; __utma=57327400.1236819735.1449365597.1449746888.1449749319.6; __utmc=57327400; __utmb=57327400"
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "name": "If-Range",
+              "value": "\"1934815-3c27-4f598167d7f00\""
+            },
+            {
+              "name": "Range",
+              "value": "bytes=2545-2545"
+            }
+          ],
+          "queryString": [],
+          "cookies": [
+            {
+              "name": "__utmz",
+              "value": "57327400.1449746888.5.4.utmccn=(referral)|utmcsr=google.com|utmcct=/|utmcmd=referral",
+              "expires": null,
+              "httpOnly": false,
+              "secure": false
+            },
+            {
+              "name": "__utma",
+              "value": "57327400.1236819735.1449365597.1449746888.1449749319.6",
+              "expires": null,
+              "httpOnly": false,
+              "secure": false
+            },
+            {
+              "name": "__utmc",
+              "value": "57327400",
+              "expires": null,
+              "httpOnly": false,
+              "secure": false
+            },
+            {
+              "name": "__utmb",
+              "value": "57327400",
+              "expires": null,
+              "httpOnly": false,
+              "secure": false
+            }
+          ],
+          "headersSize": 653,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 206,
+          "statusText": "Partial Content",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Date",
+              "value": "Thu, 10 Dec 2015 12:08:59 GMT"
+            },
+            {
+              "name": "Last-Modified",
+              "value": "Thu, 27 Mar 2014 15:17:48 GMT"
+            },
+            {
+              "name": "Server",
+              "value": "Apache"
+            },
+            {
+              "name": "ETag",
+              "value": "\"1934815-3c27-4f598167d7f00\""
+            },
+            {
+              "name": "Content-Type",
+              "value": "image/png"
+            },
+            {
+              "name": "Content-Range",
+              "value": "bytes 2545-2545/15399"
+            },
+            {
+              "name": "Cache-Control",
+              "value": "max-age=1209600"
+            },
+            {
+              "name": "Connection",
+              "value": "Keep-Alive"
+            },
+            {
+              "name": "Accept-Ranges",
+              "value": "bytes"
+            },
+            {
+              "name": "Keep-Alive",
+              "value": "timeout=5, max=50"
+            },
+            {
+              "name": "Content-Length",
+              "value": "1"
+            },
+            {
+              "name": "Expires",
+              "value": "Thu, 24 Dec 2015 12:08:59 GMT"
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 15399,
+            "mimeType": "image/png"
+          },
+          "redirectURL": "",
+          "headersSize": 398,
+          "bodySize": 0,
+          "_transferSize": 0
+        },
+        "cache": {},
+        "timings": {
+          "blocked": -1,
+          "dns": -1,
+          "connect": -1,
+          "send": 0,
+          "wait": 0,
+          "receive": 0,
+          "ssl": -1
+        },
+        "connection": "13071",
+        "pageref": "page_2"
+      },
+      {
+        "startedDateTime": "2015-12-10T12:10:03.799Z",
+        "time": 0,
+        "request": {
+          "method": "GET",
+          "url": "http://www.softwareishard.com/images/posts/start-with-firebuglite/firefox.png",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Accept-Encoding",
+              "value": "gzip, deflate, sdch"
+            },
+            {
+              "name": "Host",
+              "value": "www.softwareishard.com"
+            },
+            {
+              "name": "Accept-Language",
+              "value": "en-US,en;q=0.8"
+            },
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36"
+            },
+            {
+              "name": "Accept",
+              "value": "image/webp,image/*,*/*;q=0.8"
+            },
+            {
+              "name": "Referer",
+              "value": "http://www.softwareishard.com/blog/?s=test"
+            },
+            {
+              "name": "Cookie",
+              "value": "__utmz=57327400.1449746888.5.4.utmccn=(referral)|utmcsr=google.com|utmcct=/|utmcmd=referral; __utma=57327400.1236819735.1449365597.1449746888.1449749319.6; __utmc=57327400; __utmb=57327400"
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "name": "If-Range",
+              "value": "\"175b1b7-a51a-4e44ba70a68c0\""
+            },
+            {
+              "name": "Range",
+              "value": "bytes=2545-2545"
+            }
+          ],
+          "queryString": [],
+          "cookies": [
+            {
+              "name": "__utmz",
+              "value": "57327400.1449746888.5.4.utmccn=(referral)|utmcsr=google.com|utmcct=/|utmcmd=referral",
+              "expires": null,
+              "httpOnly": false,
+              "secure": false
+            },
+            {
+              "name": "__utma",
+              "value": "57327400.1236819735.1449365597.1449746888.1449749319.6",
+              "expires": null,
+              "httpOnly": false,
+              "secure": false
+            },
+            {
+              "name": "__utmc",
+              "value": "57327400",
+              "expires": null,
+              "httpOnly": false,
+              "secure": false
+            },
+            {
+              "name": "__utmb",
+              "value": "57327400",
+              "expires": null,
+              "httpOnly": false,
+              "secure": false
+            }
+          ],
+          "headersSize": 661,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 206,
+          "statusText": "Partial Content",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Date",
+              "value": "Thu, 10 Dec 2015 12:08:59 GMT"
+            },
+            {
+              "name": "Last-Modified",
+              "value": "Mon, 19 Aug 2013 11:58:03 GMT"
+            },
+            {
+              "name": "Server",
+              "value": "Apache"
+            },
+            {
+              "name": "ETag",
+              "value": "\"175b1b7-a51a-4e44ba70a68c0\""
+            },
+            {
+              "name": "Content-Type",
+              "value": "image/png"
+            },
+            {
+              "name": "Content-Range",
+              "value": "bytes 2545-2545/42266"
+            },
+            {
+              "name": "Cache-Control",
+              "value": "max-age=1209600"
+            },
+            {
+              "name": "Connection",
+              "value": "Keep-Alive"
+            },
+            {
+              "name": "Accept-Ranges",
+              "value": "bytes"
+            },
+            {
+              "name": "Keep-Alive",
+              "value": "timeout=5, max=48"
+            },
+            {
+              "name": "Content-Length",
+              "value": "1"
+            },
+            {
+              "name": "Expires",
+              "value": "Thu, 24 Dec 2015 12:08:59 GMT"
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 42266,
+            "mimeType": "image/png"
+          },
+          "redirectURL": "",
+          "headersSize": 398,
+          "bodySize": 0,
+          "_transferSize": 0
+        },
+        "cache": {},
+        "timings": {
+          "blocked": -1,
+          "dns": -1,
+          "connect": -1,
+          "send": 0,
+          "wait": 0,
+          "receive": 0,
+          "ssl": -1
+        },
+        "connection": "13041",
+        "pageref": "page_2"
+      },
+      {
+        "startedDateTime": "2015-12-10T12:10:03.799Z",
+        "time": 0,
+        "request": {
+          "method": "GET",
+          "url": "http://www.softwareishard.com/images/posts/start-with-firebuglite/chrome.png",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Accept-Encoding",
+              "value": "gzip, deflate, sdch"
+            },
+            {
+              "name": "Host",
+              "value": "www.softwareishard.com"
+            },
+            {
+              "name": "Accept-Language",
+              "value": "en-US,en;q=0.8"
+            },
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36"
+            },
+            {
+              "name": "Accept",
+              "value": "image/webp,image/*,*/*;q=0.8"
+            },
+            {
+              "name": "Referer",
+              "value": "http://www.softwareishard.com/blog/?s=test"
+            },
+            {
+              "name": "Cookie",
+              "value": "__utmz=57327400.1449746888.5.4.utmccn=(referral)|utmcsr=google.com|utmcct=/|utmcmd=referral; __utma=57327400.1236819735.1449365597.1449746888.1449749319.6; __utmc=57327400; __utmb=57327400"
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "name": "If-Range",
+              "value": "\"175b1b2-91b9-4e44ba70a68c0\""
+            },
+            {
+              "name": "Range",
+              "value": "bytes=2545-2545"
+            }
+          ],
+          "queryString": [],
+          "cookies": [
+            {
+              "name": "__utmz",
+              "value": "57327400.1449746888.5.4.utmccn=(referral)|utmcsr=google.com|utmcct=/|utmcmd=referral",
+              "expires": null,
+              "httpOnly": false,
+              "secure": false
+            },
+            {
+              "name": "__utma",
+              "value": "57327400.1236819735.1449365597.1449746888.1449749319.6",
+              "expires": null,
+              "httpOnly": false,
+              "secure": false
+            },
+            {
+              "name": "__utmc",
+              "value": "57327400",
+              "expires": null,
+              "httpOnly": false,
+              "secure": false
+            },
+            {
+              "name": "__utmb",
+              "value": "57327400",
+              "expires": null,
+              "httpOnly": false,
+              "secure": false
+            }
+          ],
+          "headersSize": 660,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 206,
+          "statusText": "Partial Content",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Date",
+              "value": "Thu, 10 Dec 2015 12:08:59 GMT"
+            },
+            {
+              "name": "Last-Modified",
+              "value": "Mon, 19 Aug 2013 11:58:03 GMT"
+            },
+            {
+              "name": "Server",
+              "value": "Apache"
+            },
+            {
+              "name": "ETag",
+              "value": "\"175b1b2-91b9-4e44ba70a68c0\""
+            },
+            {
+              "name": "Content-Type",
+              "value": "image/png"
+            },
+            {
+              "name": "Content-Range",
+              "value": "bytes 2545-2545/37305"
+            },
+            {
+              "name": "Cache-Control",
+              "value": "max-age=1209600"
+            },
+            {
+              "name": "Connection",
+              "value": "Keep-Alive"
+            },
+            {
+              "name": "Accept-Ranges",
+              "value": "bytes"
+            },
+            {
+              "name": "Keep-Alive",
+              "value": "timeout=5, max=50"
+            },
+            {
+              "name": "Content-Length",
+              "value": "1"
+            },
+            {
+              "name": "Expires",
+              "value": "Thu, 24 Dec 2015 12:08:59 GMT"
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 37305,
+            "mimeType": "image/png"
+          },
+          "redirectURL": "",
+          "headersSize": 398,
+          "bodySize": 0,
+          "_transferSize": 0
+        },
+        "cache": {},
+        "timings": {
+          "blocked": -1,
+          "dns": -1,
+          "connect": -1,
+          "send": 0,
+          "wait": 0,
+          "receive": 0,
+          "ssl": -1
+        },
+        "connection": "13096",
+        "pageref": "page_2"
+      },
+      {
+        "startedDateTime": "2015-12-10T12:10:03.799Z",
+        "time": 0,
+        "request": {
+          "method": "GET",
+          "url": "http://www.softwareishard.com/images/posts/start-with-firebuglite/explorer.png",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Accept-Encoding",
+              "value": "gzip, deflate, sdch"
+            },
+            {
+              "name": "Host",
+              "value": "www.softwareishard.com"
+            },
+            {
+              "name": "Accept-Language",
+              "value": "en-US,en;q=0.8"
+            },
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36"
+            },
+            {
+              "name": "Accept",
+              "value": "image/webp,image/*,*/*;q=0.8"
+            },
+            {
+              "name": "Referer",
+              "value": "http://www.softwareishard.com/blog/?s=test"
+            },
+            {
+              "name": "Cookie",
+              "value": "__utmz=57327400.1449746888.5.4.utmccn=(referral)|utmcsr=google.com|utmcct=/|utmcmd=referral; __utma=57327400.1236819735.1449365597.1449746888.1449749319.6; __utmc=57327400; __utmb=57327400"
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "name": "If-Range",
+              "value": "\"175b1b6-9835-4e44ba70a68c0\""
+            },
+            {
+              "name": "Range",
+              "value": "bytes=2545-2545"
+            }
+          ],
+          "queryString": [],
+          "cookies": [
+            {
+              "name": "__utmz",
+              "value": "57327400.1449746888.5.4.utmccn=(referral)|utmcsr=google.com|utmcct=/|utmcmd=referral",
+              "expires": null,
+              "httpOnly": false,
+              "secure": false
+            },
+            {
+              "name": "__utma",
+              "value": "57327400.1236819735.1449365597.1449746888.1449749319.6",
+              "expires": null,
+              "httpOnly": false,
+              "secure": false
+            },
+            {
+              "name": "__utmc",
+              "value": "57327400",
+              "expires": null,
+              "httpOnly": false,
+              "secure": false
+            },
+            {
+              "name": "__utmb",
+              "value": "57327400",
+              "expires": null,
+              "httpOnly": false,
+              "secure": false
+            }
+          ],
+          "headersSize": 662,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 206,
+          "statusText": "Partial Content",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Date",
+              "value": "Thu, 10 Dec 2015 12:08:59 GMT"
+            },
+            {
+              "name": "Last-Modified",
+              "value": "Mon, 19 Aug 2013 11:58:03 GMT"
+            },
+            {
+              "name": "Server",
+              "value": "Apache"
+            },
+            {
+              "name": "ETag",
+              "value": "\"175b1b6-9835-4e44ba70a68c0\""
+            },
+            {
+              "name": "Content-Type",
+              "value": "image/png"
+            },
+            {
+              "name": "Content-Range",
+              "value": "bytes 2545-2545/38965"
+            },
+            {
+              "name": "Cache-Control",
+              "value": "max-age=1209600"
+            },
+            {
+              "name": "Connection",
+              "value": "Keep-Alive"
+            },
+            {
+              "name": "Accept-Ranges",
+              "value": "bytes"
+            },
+            {
+              "name": "Keep-Alive",
+              "value": "timeout=5, max=50"
+            },
+            {
+              "name": "Content-Length",
+              "value": "1"
+            },
+            {
+              "name": "Expires",
+              "value": "Thu, 24 Dec 2015 12:08:59 GMT"
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 38965,
+            "mimeType": "image/png"
+          },
+          "redirectURL": "",
+          "headersSize": 398,
+          "bodySize": 0,
+          "_transferSize": 0
+        },
+        "cache": {},
+        "timings": {
+          "blocked": -1,
+          "dns": -1,
+          "connect": -1,
+          "send": 0,
+          "wait": 0,
+          "receive": 0,
+          "ssl": -1
+        },
+        "connection": "13093",
+        "pageref": "page_2"
+      },
+      {
+        "startedDateTime": "2015-12-10T12:10:03.954Z",
+        "time": 389.4040000000132,
+        "request": {
+          "method": "GET",
+          "url": "http://www.softwareishard.com/firebug/extensions/firepicker/firepicker.png",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Accept-Encoding",
+              "value": "gzip, deflate, sdch"
+            },
+            {
+              "name": "Host",
+              "value": "www.softwareishard.com"
+            },
+            {
+              "name": "Accept-Language",
+              "value": "en-US,en;q=0.8"
+            },
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36"
+            },
+            {
+              "name": "Accept",
+              "value": "image/webp,image/*,*/*;q=0.8"
+            },
+            {
+              "name": "Referer",
+              "value": "http://www.softwareishard.com/blog/"
+            },
+            {
+              "name": "Cookie",
+              "value": "__utmz=57327400.1449746888.5.4.utmccn=(referral)|utmcsr=google.com|utmcct=/|utmcmd=referral; __utma=57327400.1236819735.1449365597.1449746888.1449749319.6; __utmc=57327400; __utmb=57327400"
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "name": "If-Range",
+              "value": "\"175a1b8-9bbc-4e36bb5dce0c0\""
+            },
+            {
+              "name": "Range",
+              "value": "bytes=2545-2545"
+            }
+          ],
+          "queryString": [],
+          "cookies": [
+            {
+              "name": "__utmz",
+              "value": "57327400.1449746888.5.4.utmccn=(referral)|utmcsr=google.com|utmcct=/|utmcmd=referral",
+              "expires": null,
+              "httpOnly": false,
+              "secure": false
+            },
+            {
+              "name": "__utma",
+              "value": "57327400.1236819735.1449365597.1449746888.1449749319.6",
+              "expires": null,
+              "httpOnly": false,
+              "secure": false
+            },
+            {
+              "name": "__utmc",
+              "value": "57327400",
+              "expires": null,
+              "httpOnly": false,
+              "secure": false
+            },
+            {
+              "name": "__utmb",
+              "value": "57327400",
+              "expires": null,
+              "httpOnly": false,
+              "secure": false
+            }
+          ],
+          "headersSize": 651,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 206,
+          "statusText": "Partial Content",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Date",
+              "value": "Thu, 10 Dec 2015 12:10:04 GMT"
+            },
+            {
+              "name": "Last-Modified",
+              "value": "Thu, 08 Aug 2013 08:47:39 GMT"
+            },
+            {
+              "name": "Server",
+              "value": "Apache"
+            },
+            {
+              "name": "ETag",
+              "value": "\"175a1b8-9bbc-4e36bb5dce0c0\""
+            },
+            {
+              "name": "Content-Type",
+              "value": "image/png"
+            },
+            {
+              "name": "Content-Range",
+              "value": "bytes 2545-2545/39868"
+            },
+            {
+              "name": "Cache-Control",
+              "value": "max-age=1209600"
+            },
+            {
+              "name": "Connection",
+              "value": "Keep-Alive"
+            },
+            {
+              "name": "Accept-Ranges",
+              "value": "bytes"
+            },
+            {
+              "name": "Keep-Alive",
+              "value": "timeout=5, max=49"
+            },
+            {
+              "name": "Content-Length",
+              "value": "1"
+            },
+            {
+              "name": "Expires",
+              "value": "Thu, 24 Dec 2015 12:10:04 GMT"
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 39868,
+            "mimeType": "image/png"
+          },
+          "redirectURL": "",
+          "headersSize": 398,
+          "bodySize": 37726,
+          "_transferSize": 38124
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 0.492000000122061,
+          "dns": -1,
+          "connect": -1,
+          "send": 0.051999999868712954,
+          "wait": 128.08300000006022,
+          "receive": 260.7769999999622,
+          "ssl": -1
+        },
+        "connection": "13404",
+        "pageref": "page_2"
+      },
+      {
+        "startedDateTime": "2015-12-10T12:10:03.801Z",
+        "time": 0,
+        "request": {
+          "method": "GET",
+          "url": "http://www.softwareishard.com/firebug/extensions/firestorageplus/firestorageplus.png",
+          "httpVersion": "unknown",
+          "headers": [
+            {
+              "name": "X-DevTools-Emulate-Network-Conditions-Client-Id",
+              "value": "0A9D857F-735E-4887-B40F-ED3556954196"
+            },
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36"
+            }
+          ],
+          "queryString": [],
+          "cookies": [],
+          "headersSize": -1,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "unknown",
+          "headers": [
+            {
+              "name": "Date",
+              "value": "Thu, 10 Dec 2015 12:08:38 GMT"
+            },
+            {
+              "name": "Last-Modified",
+              "value": "Tue, 06 Aug 2013 13:06:19 GMT"
+            },
+            {
+              "name": "Server",
+              "value": "Apache"
+            },
+            {
+              "name": "ETag",
+              "value": "\"175a1c3-6153-4e347173e88c0\""
+            },
+            {
+              "name": "Content-Type",
+              "value": "image/png"
+            },
+            {
+              "name": "Cache-Control",
+              "value": "max-age=1209600"
+            },
+            {
+              "name": "Accept-Ranges",
+              "value": "bytes"
+            },
+            {
+              "name": "Content-Length",
+              "value": "24915"
+            },
+            {
+              "name": "Expires",
+              "value": "Thu, 24 Dec 2015 12:08:38 GMT"
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 24915,
+            "mimeType": "image/png"
+          },
+          "redirectURL": "",
+          "headersSize": -1,
+          "bodySize": 0,
+          "_transferSize": 0
+        },
+        "cache": {},
+        "timings": {
+          "blocked": -1,
+          "dns": -1,
+          "connect": -1,
+          "send": 0,
+          "wait": 0,
+          "receive": 0,
+          "ssl": -1
+        },
+        "pageref": "page_2"
+      },
+      {
+        "startedDateTime": "2015-12-10T12:10:03.801Z",
+        "time": 0,
+        "request": {
+          "method": "GET",
+          "url": "http://www.softwareishard.com/firebug/extensions/firequery/firequery.png",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Accept-Encoding",
+              "value": "gzip, deflate, sdch"
+            },
+            {
+              "name": "Host",
+              "value": "www.softwareishard.com"
+            },
+            {
+              "name": "Accept-Language",
+              "value": "en-US,en;q=0.8"
+            },
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36"
+            },
+            {
+              "name": "Accept",
+              "value": "image/webp,image/*,*/*;q=0.8"
+            },
+            {
+              "name": "Referer",
+              "value": "http://www.softwareishard.com/blog/?s=test"
+            },
+            {
+              "name": "Cookie",
+              "value": "__utmz=57327400.1449746888.5.4.utmccn=(referral)|utmcsr=google.com|utmcct=/|utmcmd=referral; __utma=57327400.1236819735.1449365597.1449746888.1449749319.6; __utmc=57327400; __utmb=57327400"
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            }
+          ],
+          "queryString": [],
+          "cookies": [
+            {
+              "name": "__utmz",
+              "value": "57327400.1449746888.5.4.utmccn=(referral)|utmcsr=google.com|utmcct=/|utmcmd=referral",
+              "expires": null,
+              "httpOnly": false,
+              "secure": false
+            },
+            {
+              "name": "__utma",
+              "value": "57327400.1236819735.1449365597.1449746888.1449749319.6",
+              "expires": null,
+              "httpOnly": false,
+              "secure": false
+            },
+            {
+              "name": "__utmc",
+              "value": "57327400",
+              "expires": null,
+              "httpOnly": false,
+              "secure": false
+            },
+            {
+              "name": "__utmb",
+              "value": "57327400",
+              "expires": null,
+              "httpOnly": false,
+              "secure": false
+            }
+          ],
+          "headersSize": 592,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Date",
+              "value": "Thu, 10 Dec 2015 12:08:59 GMT"
+            },
+            {
+              "name": "Last-Modified",
+              "value": "Wed, 24 Jul 2013 15:59:03 GMT"
+            },
+            {
+              "name": "Server",
+              "value": "Apache"
+            },
+            {
+              "name": "ETag",
+              "value": "\"175a1ba-6331-4e243fd0cbfc0\""
+            },
+            {
+              "name": "Content-Type",
+              "value": "image/png"
+            },
+            {
+              "name": "Cache-Control",
+              "value": "max-age=1209600"
+            },
+            {
+              "name": "Connection",
+              "value": "Keep-Alive"
+            },
+            {
+              "name": "Accept-Ranges",
+              "value": "bytes"
+            },
+            {
+              "name": "Keep-Alive",
+              "value": "timeout=5, max=50"
+            },
+            {
+              "name": "Content-Length",
+              "value": "25393"
+            },
+            {
+              "name": "Expires",
+              "value": "Thu, 24 Dec 2015 12:08:59 GMT"
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 25393,
+            "mimeType": "image/png"
+          },
+          "redirectURL": "",
+          "headersSize": 351,
+          "bodySize": 0,
+          "_transferSize": 0
+        },
+        "cache": {},
+        "timings": {
+          "blocked": -1,
+          "dns": -1,
+          "connect": -1,
+          "send": 0,
+          "wait": 0,
+          "receive": 0,
+          "ssl": -1
+        },
+        "connection": "13090",
+        "pageref": "page_2"
+      },
+      {
+        "startedDateTime": "2015-12-10T12:10:03.922Z",
+        "time": 0,
+        "request": {
+          "method": "GET",
+          "url": "http://www.softwareishard.com/blog/wp-content/themes/miniBits/miniBits/img/wordpress.gif",
+          "httpVersion": "unknown",
+          "headers": [
+            {
+              "name": "X-DevTools-Emulate-Network-Conditions-Client-Id",
+              "value": "0A9D857F-735E-4887-B40F-ED3556954196"
+            },
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36"
+            }
+          ],
+          "queryString": [],
+          "cookies": [],
+          "headersSize": -1,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "unknown",
+          "headers": [
+            {
+              "name": "Date",
+              "value": "Wed, 09 Dec 2015 11:03:19 GMT"
+            },
+            {
+              "name": "Last-Modified",
+              "value": "Sun, 27 Jun 2010 08:25:00 GMT"
+            },
+            {
+              "name": "Server",
+              "value": "Apache"
+            },
+            {
+              "name": "ETag",
+              "value": "\"1759e35-208-489febd736f00\""
+            },
+            {
+              "name": "Content-Type",
+              "value": "image/gif"
+            },
+            {
+              "name": "Cache-Control",
+              "value": "max-age=1209600"
+            },
+            {
+              "name": "Accept-Ranges",
+              "value": "bytes"
+            },
+            {
+              "name": "Content-Length",
+              "value": "520"
+            },
+            {
+              "name": "Expires",
+              "value": "Wed, 23 Dec 2015 11:03:19 GMT"
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 520,
+            "mimeType": "image/gif"
+          },
+          "redirectURL": "",
+          "headersSize": -1,
+          "bodySize": 0,
+          "_transferSize": 0
+        },
+        "cache": {},
+        "timings": {
+          "blocked": -1,
+          "dns": -1,
+          "connect": -1,
+          "send": 0,
+          "wait": 0,
+          "receive": 0,
+          "ssl": -1
+        },
+        "pageref": "page_2"
+      },
+      {
+        "startedDateTime": "2015-12-10T12:10:03.922Z",
+        "time": 0,
+        "request": {
+          "method": "GET",
+          "url": "http://www.softwareishard.com/blog/wp-content/themes/miniBits/miniBits/img/creativebits.gif",
+          "httpVersion": "unknown",
+          "headers": [
+            {
+              "name": "X-DevTools-Emulate-Network-Conditions-Client-Id",
+              "value": "0A9D857F-735E-4887-B40F-ED3556954196"
+            },
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36"
+            }
+          ],
+          "queryString": [],
+          "cookies": [],
+          "headersSize": -1,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "unknown",
+          "headers": [
+            {
+              "name": "Date",
+              "value": "Wed, 09 Dec 2015 11:03:19 GMT"
+            },
+            {
+              "name": "Last-Modified",
+              "value": "Sun, 27 Jun 2010 08:24:57 GMT"
+            },
+            {
+              "name": "Server",
+              "value": "Apache"
+            },
+            {
+              "name": "ETag",
+              "value": "\"1759e2e-155-489febd45a840\""
+            },
+            {
+              "name": "Content-Type",
+              "value": "image/gif"
+            },
+            {
+              "name": "Cache-Control",
+              "value": "max-age=1209600"
+            },
+            {
+              "name": "Accept-Ranges",
+              "value": "bytes"
+            },
+            {
+              "name": "Content-Length",
+              "value": "341"
+            },
+            {
+              "name": "Expires",
+              "value": "Wed, 23 Dec 2015 11:03:19 GMT"
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 341,
+            "mimeType": "image/gif"
+          },
+          "redirectURL": "",
+          "headersSize": -1,
+          "bodySize": 0,
+          "_transferSize": 0
+        },
+        "cache": {},
+        "timings": {
+          "blocked": -1,
+          "dns": -1,
+          "connect": -1,
+          "send": 0,
+          "wait": 0,
+          "receive": 0,
+          "ssl": -1
+        },
+        "pageref": "page_2"
+      },
+      {
+        "startedDateTime": "2015-12-10T12:10:03.922Z",
+        "time": 0.8210000000872242,
+        "request": {
+          "method": "GET",
+          "url": "http://www.google-analytics.com/urchin.js",
+          "httpVersion": "unknown",
+          "headers": [
+            {
+              "name": "Accept",
+              "value": "*/*"
+            },
+            {
+              "name": "Referer",
+              "value": "http://www.softwareishard.com/blog/"
+            },
+            {
+              "name": "X-DevTools-Emulate-Network-Conditions-Client-Id",
+              "value": "0A9D857F-735E-4887-B40F-ED3556954196"
+            },
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36"
+            }
+          ],
+          "queryString": [],
+          "cookies": [],
+          "headersSize": -1,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "unknown",
+          "headers": [
+            {
+              "name": "Date",
+              "value": "Fri, 04 Dec 2015 03:45:13 GMT"
+            },
+            {
+              "name": "Content-Encoding",
+              "value": "gzip"
+            },
+            {
+              "name": "X-Content-Type-Options",
+              "value": "nosniff"
+            },
+            {
+              "name": "Last-Modified",
+              "value": "Thu, 05 Nov 2015 22:24:16 GMT"
+            },
+            {
+              "name": "Server",
+              "value": "GFE/2.0"
+            },
+            {
+              "name": "Age",
+              "value": "458286"
+            },
+            {
+              "name": "Vary",
+              "value": "Accept-Encoding"
+            },
+            {
+              "name": "Content-Type",
+              "value": "text/javascript"
+            },
+            {
+              "name": "Cache-Control",
+              "value": "public, max-age=1209600"
+            },
+            {
+              "name": "Content-Length",
+              "value": "6847"
+            },
+            {
+              "name": "Expires",
+              "value": "Fri, 18 Dec 2015 03:45:13 GMT"
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 22678,
+            "mimeType": "text/javascript"
+          },
+          "redirectURL": "",
+          "headersSize": -1,
+          "bodySize": 0,
+          "_transferSize": 0
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 0.141999999868858,
+          "dns": -1,
+          "connect": -1,
+          "send": 0,
+          "wait": 0.30900000001565797,
+          "receive": 0.3700000002027082,
+          "ssl": -1
+        },
+        "pageref": "page_2"
+      },
+      {
+        "startedDateTime": "2015-12-10T12:10:03.990Z",
+        "time": 19.298000000162574,
+        "request": {
+          "method": "GET",
+          "url": "http://www.google-analytics.com/__utm.gif?utmwv=1.4&utmn=383218749&utmcs=UTF-8&utmsr=1600x900&utmsc=24-bit&utmul=en-us&utmje=0&utmfl=19.0%20r0&utmdt=Software%20is%20hard&utmhn=www.softwareishard.com&utmhid=962953158&utmr=0&utmp=/blog/&utmac=UA-3586722-1&utmcc=__utma%3D57327400.1236819735.1449365597.1449746888.1449749319.6%3B%2B__utmz%3D57327400.1449746888.5.4.utmccn%3D(referral)%7Cutmcsr%3Dgoogle.com%7Cutmcct%3D%2F%7Cutmcmd%3Dreferral%3B%2B",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Accept",
+              "value": "image/webp,image/*,*/*;q=0.8"
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "name": "Accept-Encoding",
+              "value": "gzip, deflate, sdch"
+            },
+            {
+              "name": "Referer",
+              "value": "http://www.softwareishard.com/blog/"
+            },
+            {
+              "name": "Host",
+              "value": "www.google-analytics.com"
+            },
+            {
+              "name": "Accept-Language",
+              "value": "en-US,en;q=0.8"
+            },
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36"
+            }
+          ],
+          "queryString": [
+            {
+              "name": "utmwv",
+              "value": "1.4"
+            },
+            {
+              "name": "utmn",
+              "value": "383218749"
+            },
+            {
+              "name": "utmcs",
+              "value": "UTF-8"
+            },
+            {
+              "name": "utmsr",
+              "value": "1600x900"
+            },
+            {
+              "name": "utmsc",
+              "value": "24-bit"
+            },
+            {
+              "name": "utmul",
+              "value": "en-us"
+            },
+            {
+              "name": "utmje",
+              "value": "0"
+            },
+            {
+              "name": "utmfl",
+              "value": "19.0%20r0"
+            },
+            {
+              "name": "utmdt",
+              "value": "Software%20is%20hard"
+            },
+            {
+              "name": "utmhn",
+              "value": "www.softwareishard.com"
+            },
+            {
+              "name": "utmhid",
+              "value": "962953158"
+            },
+            {
+              "name": "utmr",
+              "value": "0"
+            },
+            {
+              "name": "utmp",
+              "value": "/blog/"
+            },
+            {
+              "name": "utmac",
+              "value": "UA-3586722-1"
+            },
+            {
+              "name": "utmcc",
+              "value": "__utma%3D57327400.1236819735.1449365597.1449746888.1449749319.6%3B%2B__utmz%3D57327400.1449746888.5.4.utmccn%3D(referral)%7Cutmcsr%3Dgoogle.com%7Cutmcct%3D%2F%7Cutmcmd%3Dreferral%3B%2B"
+            }
+          ],
+          "cookies": [],
+          "headersSize": 759,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Pragma",
+              "value": "no-cache"
+            },
+            {
+              "name": "Date",
+              "value": "Wed, 09 Dec 2015 11:39:15 GMT"
+            },
+            {
+              "name": "X-Content-Type-Options",
+              "value": "nosniff"
+            },
+            {
+              "name": "Last-Modified",
+              "value": "Sun, 17 May 1998 03:00:00 GMT"
+            },
+            {
+              "name": "Server",
+              "value": "Golfe2"
+            },
+            {
+              "name": "Age",
+              "value": "88248"
+            },
+            {
+              "name": "Content-Type",
+              "value": "image/gif"
+            },
+            {
+              "name": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "name": "Cache-Control",
+              "value": "no-cache, no-store, must-revalidate"
+            },
+            {
+              "name": "Content-Length",
+              "value": "35"
+            },
+            {
+              "name": "Expires",
+              "value": "Mon, 01 Jan 1990 00:00:00 GMT"
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 35,
+            "mimeType": "image/gif",
+            "compression": 0
+          },
+          "redirectURL": "",
+          "headersSize": 350,
+          "bodySize": 35,
+          "_transferSize": 385
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 0.465999999960332,
+          "dns": 0.01299999985349104,
+          "connect": 8.671000000049387,
+          "send": 0.0439999998889089,
+          "wait": 9.83100000030388,
+          "receive": 0.273000000106574,
+          "ssl": -1
+        },
+        "connection": "13435",
+        "pageref": "page_2"
+      },
+      {
+        "startedDateTime": "2015-12-10T12:10:03.993Z",
+        "time": 0,
+        "request": {
+          "method": "GET",
+          "url": "http://www.softwareishard.com/blog/wp-content/themes/miniBits/miniBits/img/sidebar_top.gif",
+          "httpVersion": "unknown",
+          "headers": [
+            {
+              "name": "X-DevTools-Emulate-Network-Conditions-Client-Id",
+              "value": "0A9D857F-735E-4887-B40F-ED3556954196"
+            },
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36"
+            }
+          ],
+          "queryString": [],
+          "cookies": [],
+          "headersSize": -1,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "unknown",
+          "headers": [
+            {
+              "name": "Date",
+              "value": "Wed, 09 Dec 2015 11:03:19 GMT"
+            },
+            {
+              "name": "Last-Modified",
+              "value": "Sun, 27 Jun 2010 08:24:59 GMT"
+            },
+            {
+              "name": "Server",
+              "value": "Apache"
+            },
+            {
+              "name": "ETag",
+              "value": "\"1759e34-6d-489febd642cc0\""
+            },
+            {
+              "name": "Content-Type",
+              "value": "image/gif"
+            },
+            {
+              "name": "Cache-Control",
+              "value": "max-age=1209600"
+            },
+            {
+              "name": "Accept-Ranges",
+              "value": "bytes"
+            },
+            {
+              "name": "Content-Length",
+              "value": "109"
+            },
+            {
+              "name": "Expires",
+              "value": "Wed, 23 Dec 2015 11:03:19 GMT"
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 109,
+            "mimeType": "image/gif"
+          },
+          "redirectURL": "",
+          "headersSize": -1,
+          "bodySize": 0,
+          "_transferSize": 0
+        },
+        "cache": {},
+        "timings": {
+          "blocked": -1,
+          "dns": -1,
+          "connect": -1,
+          "send": 0,
+          "wait": 0,
+          "receive": 0,
+          "ssl": -1
+        },
+        "pageref": "page_2"
+      },
+      {
+        "startedDateTime": "2015-12-10T12:10:03.994Z",
+        "time": 0,
+        "request": {
+          "method": "GET",
+          "url": "http://www.softwareishard.com/blog/wp-content/themes/miniBits/miniBits/img/sidebar_bottom.gif",
+          "httpVersion": "unknown",
+          "headers": [
+            {
+              "name": "X-DevTools-Emulate-Network-Conditions-Client-Id",
+              "value": "0A9D857F-735E-4887-B40F-ED3556954196"
+            },
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36"
+            }
+          ],
+          "queryString": [],
+          "cookies": [],
+          "headersSize": -1,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "unknown",
+          "headers": [
+            {
+              "name": "Date",
+              "value": "Wed, 09 Dec 2015 11:03:19 GMT"
+            },
+            {
+              "name": "Last-Modified",
+              "value": "Sun, 27 Jun 2010 08:24:59 GMT"
+            },
+            {
+              "name": "Server",
+              "value": "Apache"
+            },
+            {
+              "name": "ETag",
+              "value": "\"1759e33-71-489febd642cc0\""
+            },
+            {
+              "name": "Content-Type",
+              "value": "image/gif"
+            },
+            {
+              "name": "Cache-Control",
+              "value": "max-age=1209600"
+            },
+            {
+              "name": "Accept-Ranges",
+              "value": "bytes"
+            },
+            {
+              "name": "Content-Length",
+              "value": "113"
+            },
+            {
+              "name": "Expires",
+              "value": "Wed, 23 Dec 2015 11:03:19 GMT"
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 113,
+            "mimeType": "image/gif"
+          },
+          "redirectURL": "",
+          "headersSize": -1,
+          "bodySize": 0,
+          "_transferSize": 0
+        },
+        "cache": {},
+        "timings": {
+          "blocked": -1,
+          "dns": -1,
+          "connect": -1,
+          "send": 0,
+          "wait": 0,
+          "receive": 0,
+          "ssl": -1
+        },
+        "pageref": "page_2"
+      },
+      {
+        "startedDateTime": "2015-12-10T12:10:04.347Z",
+        "time": 0,
+        "request": {
+          "method": "GET",
+          "url": "http://www.softwareishard.com/blog/wp-content/plugins/wp-lightbox2/images/loading.gif",
+          "httpVersion": "unknown",
+          "headers": [
+            {
+              "name": "X-DevTools-Emulate-Network-Conditions-Client-Id",
+              "value": "0A9D857F-735E-4887-B40F-ED3556954196"
+            },
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36"
+            }
+          ],
+          "queryString": [],
+          "cookies": [],
+          "headersSize": -1,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "unknown",
+          "headers": [
+            {
+              "name": "Date",
+              "value": "Wed, 09 Dec 2015 11:03:19 GMT"
+            },
+            {
+              "name": "Last-Modified",
+              "value": "Sat, 26 Apr 2008 09:51:19 GMT"
+            },
+            {
+              "name": "Server",
+              "value": "Apache"
+            },
+            {
+              "name": "ETag",
+              "value": "\"1759c7c-acf-44bc39fd3b3c0\""
+            },
+            {
+              "name": "Content-Type",
+              "value": "image/gif"
+            },
+            {
+              "name": "Cache-Control",
+              "value": "max-age=1209600"
+            },
+            {
+              "name": "Accept-Ranges",
+              "value": "bytes"
+            },
+            {
+              "name": "Content-Length",
+              "value": "2767"
+            },
+            {
+              "name": "Expires",
+              "value": "Wed, 23 Dec 2015 11:03:19 GMT"
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 2767,
+            "mimeType": "image/gif"
+          },
+          "redirectURL": "",
+          "headersSize": -1,
+          "bodySize": 0,
+          "_transferSize": 0
+        },
+        "cache": {},
+        "timings": {
+          "blocked": -1,
+          "dns": -1,
+          "connect": -1,
+          "send": 0,
+          "wait": 0,
+          "receive": 0,
+          "ssl": -1
+        },
+        "pageref": "page_2"
+      },
+      {
+        "startedDateTime": "2015-12-10T12:10:04.347Z",
+        "time": 0,
+        "request": {
+          "method": "GET",
+          "url": "http://www.softwareishard.com/blog/wp-content/plugins/wp-lightbox2/images/closelabel.gif",
+          "httpVersion": "unknown",
+          "headers": [
+            {
+              "name": "X-DevTools-Emulate-Network-Conditions-Client-Id",
+              "value": "0A9D857F-735E-4887-B40F-ED3556954196"
+            },
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36"
+            }
+          ],
+          "queryString": [],
+          "cookies": [],
+          "headersSize": -1,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "unknown",
+          "headers": [
+            {
+              "name": "Date",
+              "value": "Wed, 09 Dec 2015 11:03:19 GMT"
+            },
+            {
+              "name": "Last-Modified",
+              "value": "Sat, 26 Apr 2008 09:51:19 GMT"
+            },
+            {
+              "name": "Server",
+              "value": "Apache"
+            },
+            {
+              "name": "ETag",
+              "value": "\"1759c7b-3d3-44bc39fd3b3c0\""
+            },
+            {
+              "name": "Content-Type",
+              "value": "image/gif"
+            },
+            {
+              "name": "Cache-Control",
+              "value": "max-age=1209600"
+            },
+            {
+              "name": "Accept-Ranges",
+              "value": "bytes"
+            },
+            {
+              "name": "Content-Length",
+              "value": "979"
+            },
+            {
+              "name": "Expires",
+              "value": "Wed, 23 Dec 2015 11:03:19 GMT"
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 979,
+            "mimeType": "image/gif"
+          },
+          "redirectURL": "",
+          "headersSize": -1,
+          "bodySize": 0,
+          "_transferSize": 0
+        },
+        "cache": {},
+        "timings": {
+          "blocked": -1,
+          "dns": -1,
+          "connect": -1,
+          "send": 0,
+          "wait": 0,
+          "receive": 0,
+          "ssl": -1
+        },
+        "pageref": "page_2"
+      }
+    ]
+  }
+}

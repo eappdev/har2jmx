@@ -51,12 +51,16 @@ public class HARBuildTest extends TestCase {
 		assertNotNull(HAR.build("{\"log\": {}}"));
 	}
 	
-	public void testGetRequestJSON() throws IOException{
+	public void test_har_simple_get() throws IOException{
 		HAR har = HAR.build(HARBuildTest.class.getResource("/har_simple_get.json"));
 		assertNotNull(har);
 		assertEquals(1, har.pages.length);
 		assertEquals(18, har.entries.length);
-		assertNotNull(har.entries[0].pageref);
-		System.out.println(har);
+		assertNotNull(har.entries[0].pageref);		
+	}
+	
+	public void test_har_simple_post() throws IOException{
+		HAR har = HAR.build(HARBuildTest.class.getResource("/har_simple_post.json"));
+		System.out.println(har);		
 	}
 }
