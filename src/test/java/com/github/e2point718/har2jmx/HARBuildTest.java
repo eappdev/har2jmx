@@ -61,6 +61,9 @@ public class HARBuildTest extends TestCase {
 	
 	public void test_har_simple_post() throws IOException{
 		HAR har = HAR.build(HARBuildTest.class.getResource("/har_simple_post.json"));
-		System.out.println(har);		
+		assertNotNull(har);
+		assertEquals(1, har.pages.length);
+		assertEquals(27, har.entries.length);
+		assertNotNull(har.entries[0].pageref);		
 	}
 }
