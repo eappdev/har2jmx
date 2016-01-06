@@ -7,18 +7,40 @@
 	<packaging>jar</packaging>
 	<name>har2jmx</name>
 	<description>Convert HAR to JMeter JMX file</description>
+	<properties>
+    		<maven.compiler.source>1.8</maven.compiler.source>
+    		<maven.compiler.target>1.8</maven.compiler.target>
+	</properties>
 	<dependencies>
-		<!-- Repository https://central.maven.org/maven2 is required for commons-math3 
-			and commons-pool2 -->
 		<dependency>
 			<groupId>org.apache.jmeter</groupId>
 			<artifactId>ApacheJMeter_java</artifactId>
 			<version>2.13</version>
+		        <exclusions>
+		            <exclusion>
+                		<groupId>commons-math3</groupId>
+                		<artifactId>commons-math3</artifactId>
+		            </exclusion>
+		            <exclusion>
+                		<groupId>commons-pool2</groupId>
+                		<artifactId>commons-pool2</artifactId>
+		            </exclusion>
+		        </exclusions>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.jmeter</groupId>
 			<artifactId>ApacheJMeter_http</artifactId>
 			<version>2.13</version>
+		        <exclusions>
+		            <exclusion>
+                		<groupId>commons-math3</groupId>
+                		<artifactId>commons-math3</artifactId>
+		            </exclusion>
+		            <exclusion>
+                		<groupId>commons-pool2</groupId>
+                		<artifactId>commons-pool2</artifactId>
+		            </exclusion>
+		        </exclusions>
 		</dependency>
 		<dependency>
 			<groupId>commons-cli</groupId>
@@ -37,11 +59,4 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
-    <repositories>
-        <repository>
-            <id>maven-central</id>
-            <name>Maven Central</name>
-            <url>http://central.maven.org/maven2</url>
-        </repository>
-    </repositories>
 </project>
